@@ -2,31 +2,28 @@
 package org.tnsif.thiskeyword;
 
 public class ThisKeywordDemoOne {
-	
-	
-	//default variable
+	// Default variable
 	int x,y;
 	
-	void setData (int x,int y)
-	{
-		//we can change the parameter x=e and y=q
-		this.x=x;
-		this.y=y;
-	}
-	void display (int x,int y)
-	{
+	// Set data method
+	// We can change the variable name to avoid confusion instead of this keyword
+	void setData(int x, int y) {
+		x=x;                             // without this
 		
+		                               // this keyword is used to avoid the confusion between  
+		this.y=y;                      // default variable and method's parameter.
+	}
+	// Method
+	void display() {
 		System.out.println(x+" "+y);
-		
 	}
-
 	public static void main(String[] args) {
 		
 		ThisKeywordDemoOne t = new ThisKeywordDemoOne();
 		t.setData(2, 3);
-		t.display ();
-		
-
+		t.display();
 	}
 
 }
+
+

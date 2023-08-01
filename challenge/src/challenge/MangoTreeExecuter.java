@@ -9,7 +9,7 @@
  * t = 11  ( Tree number ) you have to check 11th tree is mango tree or not
  *  */
 
-package org.tns.challenges;
+package challenge;
 
 import java.util.Scanner;
 

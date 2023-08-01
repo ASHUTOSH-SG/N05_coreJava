@@ -1,25 +1,23 @@
 package org.tnsif.thiskeyword;
 
 public class ThisKeywordDemoFour {
-	
-	// TODO Auto-generated method stub
-	
+
 	int x;
-	ThisKeywordDemoFour()
-	{
-		// invoke the current parameterized constructor
-		this(34);
-		System.out.println("default constructor");
-		
+	// default constructor
+	ThisKeywordDemoFour(){
+		this(10);   // calling to parameterized constructor using this keyword with argument 10
+		            // then parameterized constructor is executed first and then default constructor is executed
+		System.out.println("This is default constructor");
 	}
-	ThisKeywordDemoFour(int x){
-		this.x=x;
-		System.out.println("parameterized constructor"+x);// call to default constructor
-	}
-
-
-	public static void main(String[] args) {
 	
+	// Parameterized constructor
+	ThisKeywordDemoFour(int x){
+		this.x = x;
+		System.out.println("This is parameterized constructor : " + x);
 	}
+	
+	public static void main(String[] args) {
+		ThisKeywordDemoFour t = new ThisKeywordDemoFour();  // call to default constructor
 
+	}
 }

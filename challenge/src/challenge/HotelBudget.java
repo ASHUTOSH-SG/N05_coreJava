@@ -18,7 +18,7 @@ import java.util.Scanner;
 public class HotelBudget {
 	
 	static double tariff(int month, int day, int rent) {
-		if(month == 4 || month == 5 || month == 6 || month == 11 && month == 12) {
+		if(month == 4 || month == 5 || month == 6 || month == 11 || month == 12) {
 			rent += (int) (rent*0.12);
 			return rent*day;
 		}
