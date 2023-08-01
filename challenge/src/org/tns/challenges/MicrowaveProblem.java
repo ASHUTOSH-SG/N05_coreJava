@@ -22,7 +22,7 @@ public class MicrowaveProblem {
 			break;
 		
 		case 2:
-			htime+=htime*0.5;
+			htime+=htime/2;
 			System.out.println(" If there are 2 item's then the time for heating is : "+ htime);
 			break;
 			
