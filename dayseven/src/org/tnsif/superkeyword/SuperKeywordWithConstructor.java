@@ -5,7 +5,8 @@ class Nationality{
 	String nationName;
 	
 	
-     // parent constructor
+     // parent construct
+	  
 	public Nationality(String nationName) {
 		
 		this.nationName = nationName;

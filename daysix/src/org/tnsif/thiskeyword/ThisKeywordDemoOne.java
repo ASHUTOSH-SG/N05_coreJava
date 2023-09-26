@@ -8,10 +8,19 @@ public class ThisKeywordDemoOne {
 	// Set data method
 	// We can change the variable name to avoid confusion instead of this keyword
 	void setData(int x, int y) {
-		x=x;                             // without this
+		x=x;                            
+		// without this
+		 // Here, the parameter 'x' shadows the instance variable 'x'.
+        // The assignment 'x = x' is actually assigning the value of the parameter 'x' to itself.
+        // This means that the instance variable 'x' remains unchanged, and it will still have the default value of 0.
 		
-		                               // this keyword is used to avoid the confusion between  
-		this.y=y;                      // default variable and method's parameter.
+		                              
+		this.y=y; 
+		// this keyword is used to avoid the confusion between                     
+		// default variable and method's parameter.
+		// Similar to above, 'this.y' refers to the instance variable 'y' of the current class,
+        // and 'y' on the right side refers to the method's parameter 'y'.
+        // The assignment 'this.y = y' sets the value of the instance variable 'y' to the value of the method's parameter 'y'.'
 	}
 	// Method
 	void display() {

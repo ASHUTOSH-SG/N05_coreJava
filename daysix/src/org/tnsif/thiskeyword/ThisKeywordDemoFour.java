@@ -7,7 +7,7 @@ public class ThisKeywordDemoFour {
 	ThisKeywordDemoFour(){
 		this(10);   // calling to parameterized constructor using this keyword with argument 10
 		            // then parameterized constructor is executed first and then default constructor is executed
-		System.out.println("This is default constructor");
+		System.out.println("This is default constructor" +x);
 	}
 	
 	// Parameterized constructor

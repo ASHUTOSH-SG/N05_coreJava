@@ -5,16 +5,19 @@ package org.tnsif.statickeyword;
 //then we have to make that variable static
 public class StaticVariableexecutor {
 	
-	static int num =67;
-	
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//  StaticVariableexecutor  s= StaticVariableexecutor ();
-		//System.out.println(s.num);
-		System.out.println(num);
+	// int num1 = 67;   // non-static variable
+		static int num = 67;
 		
+		public static void main(String[] args) {
+			
+			 // accessing non-static variable with object
+//			StaticKeywrodWithVariable s = new StaticKeywrodWithVariable();
+//			System.out.println(s.num1);
+			
+			// accessing static variable directly
+			System.out.println(num);
 
-	}
+		}
+
 
 }
