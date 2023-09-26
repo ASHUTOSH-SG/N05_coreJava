@@ -7,7 +7,8 @@ public class AutoBoxing {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		char c='a';
-		Character ch=c; // converting primitive data type to object type
+		Character ch=c; 
+		// converting primitive data type to object type
 		
 		System.out.println(ch);
 
